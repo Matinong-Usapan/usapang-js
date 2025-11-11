@@ -1,0 +1,8 @@
+{
+  "name": "@usapang-js/root",
+  "workspaces": [
+    "./backend-app/",
+    "./frontend-app/",
+    "./common/lib/*"
+  ]
+}
