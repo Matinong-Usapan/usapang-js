@@ -9,8 +9,16 @@ const LoginController = {
         if (email.length === 0 || password.length === 0) {
             return res.status(400).json({ message: 'Email and password are required.' });
         }   
-
-        LoginService.login(req.body);
+        try{
+            await LoginService.login(req.body);
+        } catch(error){
+            console.log("LoginController error:", error);
+                return res.status(500).send({
+                message:"internal server error ata, boss",
+            }
+        );
+        }
+        
         return res.status(200).send({
                 message:"ok ka, boss",
             }
