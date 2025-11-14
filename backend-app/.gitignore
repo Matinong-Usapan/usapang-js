@@ -17,7 +17,3 @@ yarn-error.log*
 pnpm-debug.log*
 # Test coverage
 coverage/
-# Lockfiles (optional)
-package-lock.json
-yarn.lock
-pnpm-lock.yaml
