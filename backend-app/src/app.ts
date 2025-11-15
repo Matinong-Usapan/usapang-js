@@ -1,6 +1,7 @@
-import express from 'express';
-import type { Express, Request, Response } from 'express';
-import LoginRouter from './routes/auth/login-route.ts';
+import express from "express";
+import type { Express, Request, Response } from "express";
+import LoginRouter from "./routes/auth/login-route.ts";
+import HelloWorldRouter from "./routes/hello/hello-route.ts";
 
 const app: Express = express();
 const port: number = 3002;
@@ -18,5 +19,6 @@ app.get("/test", (_req: Request, res: Response): void => {
 });
 
 app.use("/auth", LoginRouter);
+app.use("/hello", HelloWorldRouter);
 
 export default app;
