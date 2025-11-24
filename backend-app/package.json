@@ -12,7 +12,9 @@
   "author": "Matinong Usapan LLC.",
   "license": "ISC",
   "devDependencies": {
-    "@types/pg": "^8.15.6"
+    "@types/pg": "^8.15.6",
+    "@types/express": "^5.0.5",
+    "@types/jsonwebtoken": "^9.0.10"
   },
   "dependencies": {
     "express": "^5.1.0",
