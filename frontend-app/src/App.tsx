@@ -1,10 +1,15 @@
 import './App.css';
-import NavWrapper from './components/NavWrapper';
+
 import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
-import Dashboard from './components/pages/Dashboard';
-import NotFound from './components/pages/NotFound';
-import UserProfile from './components/pages/UserProfile';
+
+import { NavWrapper } from './components';
+import {
+  Dashboard,
+  NotFound,
+  UserProfile,
+  UserSettings,
+} from './components/pages';
 
 const router = createBrowserRouter([
   {
@@ -18,6 +23,11 @@ const router = createBrowserRouter([
       {
         path: "/user",
         element: <UserProfile />,
+        
+      },
+      {
+        path: "/user/settings",
+        element: <UserSettings />,
       },
       {
         path: "/*",
