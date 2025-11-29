@@ -19,13 +19,13 @@ export default function NavWrapper({
     //children
     }: NavWrapperProps
     ) {
-    return <div className="nav-wrapper" style={{display: "flex", flexDirection: "column", width: "100%", height: "100%"}}>
+    return <div className="nav-wrapper flex flex-col w-full h-full">
         <div>
             <NavBar/>
         </div>
         {
         // Here, we use the <Outlet> component instead of {children} to tell React Router where to render its routed components.
         }
-        <div style={{width: "100%", height: "100%", backgroundColor: "#666666"}}><Outlet /></div>
+        <div className="w-full h-full bg-[#666666]"><Outlet /></div>
     </div>;
 }
