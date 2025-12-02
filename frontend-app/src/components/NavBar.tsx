@@ -6,11 +6,11 @@ export default function NavBar({
     //props, // Currently unused and shape is not yet defined. This component should not and will not accept children as well.
     }: NavBarProps
     ) {
-    return <div className="nav-bar" style={{display: "flex"}}>
-        <NavLink to="/" end style={{padding: "1em"}}>
+    return <div className="nav-bar flex">
+        <NavLink to="/" end className={"p-[1em]"}>
             {"Dashboard"}
         </NavLink>
-        <NavLink to="/user" end style={{padding: "1em"}}>
+        <NavLink to="/user" end className={"p-[1em]"}>
             {"My Profile"}
         </NavLink>
     </div>;

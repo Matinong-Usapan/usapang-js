@@ -7,5 +7,5 @@ export default function PlaceholderTextDiv({
     //children
     }: PlaceholderTextDivProps
     ) {
-    return <div className="placeholder-text-div" style={{display: "inline-block", padding: "1em"}}>{placeholderText ? `Placeholder for ${placeholderText}.` : "Placeholder with no text provided."}</div>;
+    return <div className={"inline-block p-[1em]"}>{placeholderText ? `Placeholder for ${placeholderText}.` : "Placeholder with no text provided."}</div>;
 }
