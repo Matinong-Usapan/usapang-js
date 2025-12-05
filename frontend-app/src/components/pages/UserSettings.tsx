@@ -6,7 +6,7 @@ export default function UserSettings({
     //children
     }: UserSettingsProps
     ) {
-    return <div className="user-settings flex justify-center items-center">
+    return <div className="user-settings-page flex justify-center items-center">
         <PlaceholderTextDiv placeholderText="User Settings" />
     </div>;
 }

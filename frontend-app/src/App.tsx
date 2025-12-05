@@ -7,6 +7,7 @@ import {
   NotFound,
   UserProfile,
   UserSettings,
+  Sandbox,
 } from './components/pages';
 
 const router = createBrowserRouter([
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
       {
         path: "/user/settings",
         element: <UserSettings />,
+      },
+      {
+        path: "/sandbox",
+        element: <Sandbox />,
       },
       {
         path: "/*",

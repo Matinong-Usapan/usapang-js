@@ -6,7 +6,7 @@ export default function Dashboard({
     //children
     }: DashboardProps
     ) {
-    return <div className="dashboard flex justify-center items-center">
+    return <div className="dashboard-page flex justify-center items-center">
         <PlaceholderTextDiv placeholderText="Dashboard" />
     </div>;
 }

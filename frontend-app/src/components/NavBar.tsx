@@ -13,5 +13,8 @@ export default function NavBar({
         <NavLink to="/user" end className={"p-[1em]"}>
             {"My Profile"}
         </NavLink>
+        <NavLink to="/sandbox" end className={"p-[1em]"}>
+            {"Dev Sandbox"}
+        </NavLink>
     </div>;
 }
