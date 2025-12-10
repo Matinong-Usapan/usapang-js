@@ -1,5 +1,6 @@
 import { useForm } from "react-hook-form";
 import type { SubmitHandler } from "react-hook-form";
+import axios from "../../utils/axios";
 
 type EndpointFormProps = {};
 type requestMethod = "GET" | "POST" | "PUT" | "DELETE";
@@ -24,7 +25,19 @@ export default function EndpointForm({
 
     const requestMethod = watch("requestMethod");
 
-    const onSubmit: SubmitHandler<IFormInput> = (data) => console.log(data)
+    const onSubmit: SubmitHandler<IFormInput> = (data) => {
+        if (data.requestMethod === "GET") {
+            axios.get(data.requestUrl).then((res) => {
+                console.log(res);
+            });
+        }
+        else if (data.requestMethod === "POST") {
+            axios.post(data.requestUrl, data.requestBody).then((res) => {
+                console.log(res);
+            });
+        }
+        console.log(data)
+    }
 
     return <div className={"endpoint-form ujs-container gap-y-[1em] flex flex-col h-fit"}>
         <div className={"flex gap-x-2"}>
