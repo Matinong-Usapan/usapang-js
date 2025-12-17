@@ -1,5 +1,6 @@
 import { Pool } from "pg";
 import credentials from "../config/db-config.ts";
+import ServerError from "../errors/ServerError.ts";
 
 const pool = new Pool({
   host: credentials.HOST,
@@ -12,11 +13,11 @@ const pool = new Pool({
 const connect = async () =>{
     try{
         const dbClient = await pool.connect();
-        console.log("Database connection successful");
+        console.info("Database connection successful");
         return dbClient;
     } catch (error) {
         console.error("Database connection failed");
-        throw error;
+        throw new ServerError('Database connection failed');
     }
 }
 

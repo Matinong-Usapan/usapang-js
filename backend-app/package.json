@@ -5,20 +5,19 @@
   "type": "module",
   "scripts": {
     "build": "tsc",
-    "start": "tsx src/app.ts",
-    "dev be": "tsx watch src/app.ts"
+    "start": "tsx watch src/app.ts"
   },
   "keywords": [],
   "author": "Matinong Usapan LLC.",
   "license": "ISC",
   "devDependencies": {
-    "@types/pg": "^8.15.6",
     "@types/express": "^5.0.5",
-    "@types/jsonwebtoken": "^9.0.10"
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/pg": "^8.15.6"
   },
   "dependencies": {
     "express": "^5.1.0",
-    "pg": "^8.16.3",
-    "jsonwebtoken": "^9.0.2"
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.16.3"
   }
 }

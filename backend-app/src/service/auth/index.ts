@@ -1,5 +1,5 @@
-import LoginService from "./login-service.ts";
+import AuthService from "./auth-service.ts";
 
 export default {
-    LoginService,
+    AuthService,
 }

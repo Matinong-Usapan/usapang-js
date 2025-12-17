@@ -1,5 +1,5 @@
-import {LoginRepository} from "./login-repository.ts";
+import AuthRepository from "./auth-repository.ts";
 
 export default {
-    LoginRepository,
+    AuthRepository,
 }
